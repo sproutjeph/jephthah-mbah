@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  scroll-behavior: smooth;
+}
+.img-container {
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+}
+
+.img-container::before {
+  content: '';
+  position: absolute;
+  background: #e9b949;
+  width: 100%;
+  height: 100%;
+  top: -4px;
+  right: -6px;
+  border-radius: 100%;
+}
+
+.menu-btn {
+  position: absolute;
+  z-index: 2000000000;
+  right: 1.1rem;
+  top: 1.1rem;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn .menu-toggle {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  width: 28px;
+  height: 4px;
+  background: #e9b949;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn .menu-toggle::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  width: 28px;
+  height: 4px;
+  background: #e9b949;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn .menu-toggle::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  width: 20px;
+  height: 4px;
+  background: #e9b949;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn .menu-toggle.open {
+  -webkit-transform: rotate(720deg);
+  transform: rotate(720deg);
+  background: transparent;
+}
+
+.menu-btn .menu-toggle.open::before {
+  -webkit-transform: rotate(45deg) translate(5px, 8px);
+  transform: rotate(45deg) translate(5px, 8px);
+  background: red;
+}
+
+.menu-btn .menu-toggle.open::after {
+  width: 28px;
+  -webkit-transform: rotate(-45deg) translate(3px, -7px);
+  transform: rotate(-45deg) translate(3px, -7px);
+  background: red;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  transform: translateY(-100%);
+  z-index: 10000000;
+}
+
+.show {
+  transition: all 0.5s ease-in-out;
+  transform: translateY(0);
+}
+
+.fixedNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+.top-link {
+  background: #243a52;
+  padding: 0.25rem 0.5rem;
+  color: #e9b949;
+  font-size: 1.2rem;
+  display: inline-block;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  border-radius: 9px;
+  cursor: pointer;
+  -webkit-animation: bounce 2s ease-in-out infinite;
+  animation: bounce 2s ease-in-out infinite;
+  z-index: 100;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
