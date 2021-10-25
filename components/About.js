@@ -10,7 +10,7 @@ const About = () => {
         </h1>
         <Underline width="w-[4rem]" height="h-[0.15rem]" />
       </div>
-      <div className="md:flex md:justify-evenly md:items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center gap-x-3">
         <article className="">
           <div className="w-[18rem] h-[18rem] rounded-full border-[#e9b949] border flex justify-center items-center mx-auto relative">
             <div className="w-48 h-48 mx-auto">
@@ -19,7 +19,7 @@ const About = () => {
                 height={300}
                 width={300}
                 alt="photo of jeph"
-                className="rounded-full w-full h-full b"
+                className="rounded-full w-full h-full"
               />
             </div>
             <AboutSkills
@@ -48,7 +48,7 @@ const About = () => {
             />
           </div>
         </article>
-        <article className="bg-white shadow-xl  mt-14 w-96 h-80 md:mx-0 mx-auto">
+        <article className="bg-white shadow-xl  mt-14 w-[95%] h-80 md:mx-0 mx-auto">
           <div className="bg-gray-700 w-full h-[5rem] flex justify-evenly items-center">
             <AboutSkills imagePath="/images/javascript.png" />
             <AboutSkills imagePath="/images/tailwind.png" />

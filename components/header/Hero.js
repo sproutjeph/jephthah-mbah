@@ -48,7 +48,7 @@ const Hero = () => {
           />
         </div>
       </div>
-      <div className="sm:mt-40">
+      <div className="sm:mt-[5rem]">
         <SocailLinks />
       </div>
     </section>

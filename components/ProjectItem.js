@@ -12,11 +12,11 @@ const ProjectItem = (props) => {
     techImgPath,
   } = props;
   return (
-    <article className="bg-gray-50 w-[25rem] h-auto mx-auto my-2 rounded-lg shadow-lg text-gray-700 mb-8">
+    <article className="bg-gray-50 w-[20rem]  h-auto my-2 rounded-lg shadow-lg text-gray-700 mb-8 px-2 lg:w-[25rem]">
       <div className="">
         <h2 className="text-center uppercase text-xl font-bold">{title}</h2>
       </div>
-      <div className="max-h-80 max-w-80 h-[30rem] w-[25rem]">
+      <div className="h-[20rem] w-[100%]">
         <Image
           src={imageUrl}
           width={600}
