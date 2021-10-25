@@ -35,7 +35,7 @@ const ProjectItem = (props) => {
       </div>
       <section className="border-b-2 p-2">
         <h1 className="uppercase font-bold text-gray-800">{title}</h1>
-        <h2>{description}</h2>
+        <h2 className="truncate">{description}</h2>
       </section>
       <footer className="flex justify-between py-1 px-2  w-full">
         <ProjectIcon Icon={PrevIcon} title={'preview'} />
