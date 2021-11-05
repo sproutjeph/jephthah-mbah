@@ -11,7 +11,7 @@ const ContactForm = () => {
     setMessage('');
   };
   function handleSubmit(e) {
-    e.preventDefault();
+    // e.preventDefault();
     reset();
     console.log(name, email, message);
   }
