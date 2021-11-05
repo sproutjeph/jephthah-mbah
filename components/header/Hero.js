@@ -9,7 +9,6 @@ const Hero = () => {
       <div className="grid sm:flex sm:justify-evenly sm:items-center">
         <div className="md:mt-28">
           <div className="pt-16 md:pt-0">
-            <div className="w-20 h-[0.1rem] bg-[#e9b949] ml-24 sm:hidden" />
             <h2 className="font-black text-gray-700 text-4xl sm:text-5xl sm:font-extrabold">
               Hi I'm Jephthah
             </h2>
@@ -48,7 +47,7 @@ const Hero = () => {
           />
         </div>
       </div>
-      <div className="sm:mt-[5rem]">
+      <div className="sm:mt-[7rem] lg:mt-[10rem]">
         <SocailLinks />
       </div>
     </section>

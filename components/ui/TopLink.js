@@ -4,7 +4,9 @@ const TopLink = () => {
   return (
     <div className="top-link">
       <Link href="/">
-        <FaArrowUp />
+        <a>
+          <FaArrowUp />
+        </a>
       </Link>
     </div>
   );

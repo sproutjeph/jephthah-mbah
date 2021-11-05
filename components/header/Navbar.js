@@ -4,7 +4,6 @@ import { useGlobalContext } from '../../store/context';
 import ToggleBtn from '../ui/ToggleBtn';
 const Navbar = () => {
   const { setIsOpen, isOpen, scrollPosition } = useGlobalContext();
-  console.log(scrollPosition);
   const clickHandler = () => {
     setIsOpen(!isOpen);
   };

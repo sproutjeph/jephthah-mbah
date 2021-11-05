@@ -48,7 +48,7 @@ const About = () => {
             />
           </div>
         </article>
-        <article className="bg-white shadow-xl  mt-14 w-[95%] h-80 md:mx-0 mx-auto">
+        <article className="bg-white shadow-xl  mt-14 w-[95%] h-auto md:mx-0 mx-auto max-w-[33rem]">
           <div className="bg-gray-700 w-full h-[5rem] flex justify-evenly items-center">
             <AboutSkills imagePath="/images/javascript.png" />
             <AboutSkills imagePath="/images/tailwind.png" />

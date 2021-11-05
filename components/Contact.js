@@ -1,5 +1,7 @@
 import { FaMapMarker, FaEnvelopeOpen, FaPhone } from 'react-icons/fa';
+import ContactForm from './ui/ContactForm';
 import Underline from './ui/Underline';
+
 const Contact = () => {
   return (
     <section
@@ -52,64 +54,7 @@ const Contact = () => {
           <p className="absolute top-[-15px] bg-white capitalize text-lg px-4">
             let me hear from you
           </p>
-          <form action="" className="mt-8">
-            <div className="md:flex">
-              <div className=" mb-4">
-                <label
-                  htmlFor="name"
-                  className="block capitalize font-semibold tracking-wide text-gray-800 text-left ml-5"
-                >
-                  your Name
-                </label>
-                <input
-                  type="text"
-                  name=""
-                  id="name"
-                  className="rounded-md p-1 bg-[rgba(0,0,0,0.1)] w-[90%]"
-                />
-              </div>
-              <div className="mb-4">
-                <label
-                  htmlFor="email"
-                  className="block"
-                  className="block capitalize font-semibold tracking-wide text-gray-800 text-left ml-5"
-                >
-                  your email
-                </label>
-                <input
-                  type="email"
-                  name=""
-                  id="email"
-                  className="rounded-md p-1 bg-[rgba(0,0,0,0.1)] w-[90%]"
-                />
-              </div>
-            </div>
-
-            <div className="mt-3">
-              <label
-                htmlFor="message"
-                className="block"
-                className="block capitalize font-semibold tracking-wide text-gray-800 text-left ml-5"
-              >
-                your message
-              </label>
-              <textarea
-                name=""
-                id="message"
-                cols="30"
-                rows="5"
-                className="resize-none rounded-md p-2 bg-[rgba(0,0,0,0.1)] w-[90%]"
-              ></textarea>
-            </div>
-            <div className=" mt-2 w-full">
-              <button
-                type="submit"
-                className="uppercase text-xl bg-[#e9b949] py-1 px-5 font-semibold tracking-widest text-gray-100 w-28 rounded-md"
-              >
-                send
-              </button>
-            </div>
-          </form>
+          <ContactForm />
         </div>
       </div>
     </section>
