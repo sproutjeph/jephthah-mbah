@@ -26,7 +26,7 @@ const About = () => {
               imagePath="/images/javascript.png"
               top="top-[-25px]"
               title="javaScript"
-              position="absolute"
+              position="absolute" 
             />
             <AboutSkills
               imagePath="/images/tailwind.png"
