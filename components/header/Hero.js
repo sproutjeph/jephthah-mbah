@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { FaArrowDown } from 'react-icons/fa';
 import SocailLinks from '../ui/SocailLinks';
 import Link from 'next/link';
-import Typical from 'react-typical';
 const Hero = () => {
   return (
     <section className="bg-[#fffaeb] h-scale-90 text-center pb-4 md:h-screen px-1 w-full">
@@ -15,23 +14,6 @@ const Hero = () => {
             </h2>
             <p className="font-black text-gray-500 text-xl mt-5 mb-16 sm:text-2xl">
               A Front-End web developer
-              <Typical
-                steps={[
-                  1000,
-                  'My Skills:',
-                  1000,
-                  ' HTML, CSS, JAVASCRIPT',
-                  1000,
-                  'TAILWINDCSS, REACTJS,',
-                  1000,
-                  ' NEXTJS, NODEJS',
-                  1000,
-                  'GIT, TYPESCRICT AND POSTMAN',
-                  1000,
-                ]}
-                loop={Infinity}
-                wrapper={'p'}
-              />
             </p>
           </div>
           <div className="img-container mx-auto sm:hidden">
@@ -44,7 +26,7 @@ const Hero = () => {
             />
           </div>
           <div>
-            <Link href="/images/cv.pdf">
+            <Link href="/assets/my-cv.pdf">
               <button className="uppercase shadow-sm text p-4 mt-10 text-gray-100 bg-[#e9b949] hover:bg-gray-400 rounded-lg w-48 mb-10 group">
                 <span className="inline-block ">my cv</span>
                 <span className="inline-block ml-3 group-hover:animate-bounce">
